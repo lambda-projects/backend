@@ -21,10 +21,8 @@ _Note_
 > Contains latitude and longitude information fetched using [Geocoder using LocationIQ API](https://geocoder.readthedocs.io/providers/LocationIQ.html)
 
 _Note_
-
-LOCATIONIQ_API_KEY is needed to fetch missing latitude and longitude information (if any). 
-
-LOCATIONIQ API has a limit of 10000 requests per day.
+* LOCATIONIQ_API_KEY is needed to fetch missing latitude and longitude information (if any). 
+* LOCATIONIQ API has a limit of 10000 requests per day.
 
 3. **app_choropleth.py**
 
@@ -45,8 +43,8 @@ _Input:_
 > Used for feature engineering needed for generating choropleth.
 
 _Input:_
-gun-violence-data_01-2013_03-2018_cleaned.csv
-statecode.csv
+* gun-violence-data_01-2013_03-2018_cleaned.csv
+* statecode.csv
 
 _Output:_
 gun-violence-data_choropleth.csv
