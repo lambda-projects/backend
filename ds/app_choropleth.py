@@ -29,14 +29,14 @@ def update_figure(selected_year):
     filtered_df = df[df.year == selected_year]
 
     scl = [
-    [0.0, 'rgb(255,225,225)'],
-    [0.2, 'rgb(255,200,200)'],
-    [0.4, 'rgb(255,150,150)'],
-    [0.6, 'rgb(255,100,100)'],
-    [0.8, 'rgb(255,50,50)'],
-    [1.0, 'rgb(255,0,0)']
-    ]
-    
+            [0.0, 'rgb(255,225,225)'],
+            [0.2, 'rgb(245,210,203)'],
+            [0.4, 'rgb(231,166,153)'],
+            [0.6, 'rgb(213,122,105)'],
+            [0.8, 'rgb(191,77,60)'],
+            [1.0, 'rgb(165,18,18)']
+            ]
+
     df_grouped = filtered_df.groupby('code').sum().reset_index()
 
     data = [go.Choropleth(
