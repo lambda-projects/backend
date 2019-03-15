@@ -26,13 +26,13 @@ app.layout = html.Div([
     dash.dependencies.Output('graph-with-slider', 'figure'),
     [dash.dependencies.Input('year-slider', 'value')])
 def update_figure(selected_year):
-  trace1 = go.Scatter(x = temp.date, y = temp.incidents,
+  trace1 = go.Scatter(x = df.date, y = df.incidents,
                       name='Total Incidents', mode = "lines", 
                       marker = dict(color = '#a51212'))
-  trace2 = go.Scatter(x = temp.date, y = temp.n_killed, 
+  trace2 = go.Scatter(x = df.date, y = df.n_killed, 
                       name="Total Killed", mode = "lines", 
                       marker = dict(color = '#666666'))
-  trace3 = go.Scatter(x = temp.date, y = temp.n_injured, 
+  trace3 = go.Scatter(x = df.date, y = df.n_injured, 
                       name="Total Injured", mode = "lines", 
                       marker = dict(color = '#4f5a62'))
 
